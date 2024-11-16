@@ -1,4 +1,4 @@
-const symbols = ["🍒", "🍋", "🍊", "🍉", "⭐", "💎"];
+const symbols = ["🍒", "🍋", "🍊", "🍉", "⭐", "💎", "🪙"];
 const reels = document.querySelectorAll('.reel');
 const spinButton = document.getElementById('spin-btn');
 const resultDiv = document.getElementById('result');
@@ -18,6 +18,6 @@ function checkResult(results) {
     if (allEqual) {
         resultDiv.textContent = `Congratulations! You won with ${results[0]}!`;
     } else {
-        resultDiv.textContent = 'Try Again!';
+        resultDiv.textContent = 'You Lost, Try Again!';
     }
 }
